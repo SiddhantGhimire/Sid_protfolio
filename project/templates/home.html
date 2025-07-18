@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="{% static 'images/sid.png' %}">
+
+
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ 
+
+
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column align-items-center">
+    <!-- Replace siddhu.jpg with your own image -->
+    <img src="{% static 'images/siddhu.jpg' %}" alt="Profile Image">
+    <h5 class="text-white mb-4">Siddhant Ghimire</h5>
+
+     <div class="social-icons mb-4">
+      <a href="https://www.facebook.com/siddhant.ghimire.71" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/siddhant-ghimire-7a06b52a0/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/SiddhantGhimire" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <nav class="nav flex-column w-100">
+      <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+      <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+      <a class="nav-link" href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
+      <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+      <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+  <div id ="home" class="hero-section position-relative text-white">
+    <img src="{% static 'images/siddhu.jpg' %}" class="img-fluid w-100  shadow" alt="Hero Image">
+    
+   
+    <div class="hero-text position-absolute top-50 start-50 translate-middle text-center">
+      <h1 class="fw-bold">Siddhant Ghimire</h1>
+      <h4 class="mt-3">
+        <span id="typed-text"></span>
+        <span class="blinking-cursor">|</span>
+      </h4>
+    </div>
+  </div>
+  <section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Profile Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="{% static 'images/siddhu.jpg' %}" alt="Your Photo" class="img-fluid rounded shadow" style="max-height: 400px;">
+      </div>
+
+      <!-- About Text -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p class="lead">
+          Hello! I'm <strong>Siddhant Ghimire</strong>, a passionate developer with a love for designing elegant solutions. I specialize in full-stack development and thrive on solving real-world problems with clean, efficient code.
+        </p>
+        <ul class="list-unstyled mt-4">
+          <li><strong><i class="fa-solid fa-location-dot"></i> Location:</strong> Bhairawaha, Nepal</li>
+          <li><strong><i class="fa-solid fa-square-envelope"></i> Email:</strong> siddhantghimire7@example.com</li>
+          <li><strong><i class="fa-solid fa-briefcase"></i> Freelance:</strong> Available</li>
+        </ul>
+       
+
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Resume</h2>
+      <p class="text-muted">A detailed overview of my education, work experience, and skills.</p>
+    </div>
+
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-6">
+
+        <!-- Summary -->
+        <h4 class="text-primary fw-bold mb-3">Summary</h4>
+        <div class="mb-4">
+          <h5 class="fw-bold">Your Full Name</h5>
+          <p class="fst-italic">Passionate and driven software developer with a strong background in full-stack web development, eager to build scalable and elegant digital solutions.</p>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> OmSatiya-1-kataiya,Bhairawaha,Nepal</li>
+            <li><i class="fa-solid fa-square-envelope"></i> siddhantghimire7@email.com</li>
+            <li><i class="fa-solid fa-phone"></i> +977-9817594972</li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <h4 class="text-primary fw-bold mb-3">Education</h4>
+        <div class="mb-4">
+          <h5 class="fw-semibold">B.Sc. CSIT - Nepathya College</h5>
+          <p class="text-muted">2020 – 2025</p>
+          <p>Relevant Courses: DSA ,Java,Web Technology,</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="fw-semibold">+2 Science - St.joseph College</h5>
+          <p class="text-muted">2018 – 2020</p>
+          <p>Physics, Chemistry, Mathematics, </p>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6">
+
+        <!-- Experience -->
+        <h4 class="text-primary fw-bold mb-3">Experience</h4>
+
+        <div class="mb-4">
+          <h5 class="fw-semibold">Python Django Intern - IIONS Technology</h5>
+          <p class="text-muted">Feb 2025 – May 2025</p>
+          <ul>
+            <li>Develop a Resturant Project.</li>
+            <li>Worked in Altitude Air Nepal(AAN) in blog model</li>
+            
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h5 class="fw-semibold">Freelancer - Web Projects</h5>
+          <p class="text-muted">2025 – Present</p>
+          <ul>
+            <li>Built portfolio and blog websites for local clients</li>
+            <li>Integrated contact forms, maps, and admin panels</li>
+          </ul>
+        </div>
+
+        <!-- Optional: Skills -->
+        <h4 class="text-primary fw-bold mb-3">Skills</h4>
+        <ul class="list-inline">
+          <li class="list-inline-item badge bg-secondary m-1">HTML</li>
+          <li class="list-inline-item badge bg-secondary m-1">CSS</li>
+          <li class="list-inline-item badge bg-secondary m-1">Python</li>
+          <li class="list-inline-item badge bg-secondary m-1">JavaScript</li>
+
+          
+          <li class="list-inline-item badge bg-secondary m-1">Django</li>
+        
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- Optional Download CV -->
+    <div class="text-center mt-5">
+      <a href="{% static 'cv/cv.pdf' %}" class="btn btn-outline-primary" target="_blank">Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Portfolio</h2>
+      <p class="text-muted">Some of the projects I've worked on recently.</p>
+    </div>
+
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="{% static 'images/img2.jpg' %}" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Rental Website</h5>
+            <p class="card-text">A full-stack Django-based shopping site with we can rent a house</p>
+         
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="{% static 'images/gharsewa.png' %}" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">GharSewa Website</h5>
+            <p class="card-text">It is a project in Asp.Net where we can buy and sell second hand home product</p>
+        
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="{% static 'images/img2.jpg' %}" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Resturant website</h5>
+            <p class="card-text">It is a website where we can order food .</p>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Contact Me</h2>
+      <p class="text-muted">I'd love to hear from you. Drop a message below.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <!-- Django Flash Messages -->
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-success">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+
+        <!-- Contact Form -->
+        <form method="POST" action="#home">
+          {% csrf_token %}
+          {{ form.non_field_errors }}
+
+          <div class="mb-3">
+            {{ form.name.label_tag }}
+            {{ form.name }}
+            {{ form.name.errors }}
+          </div>
+
+          <div class="mb-3">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+            {{ form.email.errors }}
+          </div>
+
+          <div class="mb-3">
+            {{ form.subject.label_tag }}
+            {{ form.subject }}
+            {{ form.subject.errors }}
+          </div>
+
+          <div class="mb-3">
+            {{ form.message.label_tag }}
+            {{ form.message }}
+            {{ form.message.errors }}
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+
+    <!-- Your Name / Site -->
+    <h5 class="mb-3">© 2025 Siddhant Ghimire</h5>
+
+    <!-- Social Links -->
+    <div class="mb-3">
+      <a href="https://github.com/SiddhantGhimire" class="text-white me-3" target="_blank">
+        <i class="bi bi-github fs-5"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/siddhant-ghimire-7a06b52a0/" class="text-white me-3" target="_blank">
+        <i class="bi bi-linkedin fs-5"></i>
+      </a>
+      <a href="mailto:siddhantghimire7@email.com?subject=Hello&body=I%20want%20to%20contact%20you" class="text-white me-3">
+  <i class="bi bi-envelope fs-5"></i>
+</a>
+    </div>
+
+    <!-- Optional Credits -->
+    <small class="text-muted">Designed by <strong>Siddhant Ghimire</strong></small>
+  </div>
+</footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+ <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
