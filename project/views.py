@@ -11,7 +11,7 @@ def home(request):
             form.save() 
             
             messages.success(request, 'Message sent successfully!')
-            return redirect('#home')  # reloads home page with anchor
+            return redirect('home')  # reloads home page with anchor
     else:
         form = ContactForm()
 
